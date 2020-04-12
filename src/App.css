@@ -1,0 +1,31 @@
+.App{
+  width: 100%;
+}
+
+.Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.Heading{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #4e4e4e;
+}
+
+.App button {
+  width: 250px;
+  margin: 10px 5px;
+}
+
+@media(max-width: 700px) {
+  .Container{
+    width: 100%;
+  }
+}
