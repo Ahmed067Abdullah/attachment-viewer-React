@@ -1,3 +1,8 @@
+import image2 from '../assets/IMG_20190315_124037.jpg';
+import image3 from '../assets/Image 3.png';
+import video from '../assets/Sample Videos _ Dummy Videos For Demo Use.mp4';
+import pdf from '../assets/Sample PDF.pdf';
+
 export default [
   {
     uploader: {
@@ -5,7 +10,7 @@ export default [
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
     name: 'Image 1.jpeg',
-    link: 'https://drive.google.com/open?id=1s1gfKnoIiw1NPbOQ_eS3ZNpce0_TtF30',
+    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
     createdAt: Date.now(),
     mimetype: 'image/jpeg'
   }, {
@@ -14,7 +19,7 @@ export default [
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
     name: 'Image 2.jpeg',
-    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
+    link: image2,
     createdAt: Date.now(),
     mimetype: 'image/jpeg'
   }, {
@@ -22,17 +27,17 @@ export default [
       username: 'John Doe',
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
-    name: 'Image 3.jpeg',
-    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
+    name: 'Image 3.png',
+    link: image3,
     createdAt: Date.now(),
-    mimetype: 'image/jpeg'
+    mimetype: 'image/png'
   }, {
     uploader: {
       username: 'John Doe',
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
     name: 'Video.mp4',
-    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
+    link: video,
     createdAt: Date.now(),
     mimetype: 'video/mp4'
   }, {
@@ -41,7 +46,7 @@ export default [
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
     name: 'Sample PDF.pdf',
-    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
+    link: pdf,
     createdAt: Date.now(),
     mimetype: 'application/pdf'
   }, {
@@ -50,7 +55,7 @@ export default [
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
     name: 'Sample Document.docx',
-    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
+    link: 'https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx',
     createdAt: Date.now(),
     mimetype: 'document/docx'
   }, {
@@ -59,7 +64,7 @@ export default [
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
     name: 'Sample Presentation.pptx',
-    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
+    link: 'https://file-examples.com/wp-content/uploads/2017/08/file_example_PPT_250kB.ppt',
     createdAt: Date.now(),
     mimetype: 'document/pptx'
   }, {
@@ -68,8 +73,17 @@ export default [
       userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
     },
     name: 'Sample Sheet.xlsx',
-    link: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg',
+    link: 'https://file-examples.com/wp-content/uploads/2017/02/file_example_XLSX_10.xlsx',
     createdAt: Date.now(),
     mimetype: 'document/xlsx'
+  }, {
+    uploader: {
+      username: 'John Doe',
+      userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
+    },
+    name: 'Sample Text.text',
+    link: 'http://25.io/toau/audio/sample.txt',
+    createdAt: Date.now(),
+    mimetype: ''
   },
 ];

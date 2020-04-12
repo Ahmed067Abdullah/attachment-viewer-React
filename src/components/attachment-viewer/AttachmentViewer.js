@@ -107,6 +107,8 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
     </div>;
   }
 
+  const createdAtJSX = new Date(createdAt).toString();
+  console.log(createdAtJSX)
   return (
     <div className={classes.container}>
       <div className={classes.header}>
@@ -123,7 +125,7 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
             <p className={classes['creation-details']}>
               {username}
               <span>
-                {` | ${new Date(createdAt)}`}
+                {` | ${createdAtJSX.slice(0, createdAtJSX.length - 34)}`}
               </span>
             </p>
           </div>
