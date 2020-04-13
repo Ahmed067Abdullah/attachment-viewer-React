@@ -60,8 +60,8 @@ const styles = {
   'left-side': {
     '& img': {
       'borderRadius': '50%',
-      'height': '35px',
-      'width': '35px'
+      'height': '40px',
+      'width': '40px'
     },
     'alignItems': 'center',
     'color': '#fff',
