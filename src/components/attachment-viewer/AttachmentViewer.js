@@ -6,6 +6,11 @@ import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import Tooltip from '@material-ui/core/Tooltip';
 import stylesheet from './AttachmentViewer.styles';
 
+const iconStyles = {
+  'color': '#fff',
+  'cursor': 'pointer'
+};
+
 const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
   const [maxHeightReached, setMaxHeightReached] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -108,7 +113,7 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
   }
 
   const createdAtJSX = new Date(createdAt).toString();
-  console.log(createdAtJSX)
+
   return (
     <div className={classes.container}>
       <div className={classes.header}>
@@ -135,27 +140,20 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
             <OpenInNewIcon
               onClick={downloadFile}
               style={{
-                'color': '#fff',
-                'cursor': 'pointer',
+                ...iconStyles,
                 'marginRight': '10px'
               }} />
           </Tooltip>
           <Tooltip title="Delete">
             <DeleteIcon
               onClick={onDelete}
-              style={{
-                'color': '#fff',
-                'cursor': 'pointer'
-              }} />
+              style={iconStyles} />
           </Tooltip>
           <div className={classes.separater} />
           <Tooltip title="Close">
             <ClearIcon
               onClick={onClose}
-              style={{
-                'color': '#fff',
-                'cursor': 'pointer'
-              }} />
+              style={iconStyles} />
           </Tooltip>
         </div>
       </div>
