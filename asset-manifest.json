@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/attachment-viewer-React/static/css/main.2c72a854.chunk.css",
+    "main.js": "/attachment-viewer-React/static/js/main.e67e2c89.chunk.js",
+    "main.js.map": "/attachment-viewer-React/static/js/main.e67e2c89.chunk.js.map",
+    "runtime-main.js": "/attachment-viewer-React/static/js/runtime-main.981a9069.js",
+    "runtime-main.js.map": "/attachment-viewer-React/static/js/runtime-main.981a9069.js.map",
+    "static/js/2.49b4f782.chunk.js": "/attachment-viewer-React/static/js/2.49b4f782.chunk.js",
+    "static/js/2.49b4f782.chunk.js.map": "/attachment-viewer-React/static/js/2.49b4f782.chunk.js.map",
+    "index.html": "/attachment-viewer-React/index.html",
+    "precache-manifest.8f783dc51bc110e04dd953f8aab82558.js": "/attachment-viewer-React/precache-manifest.8f783dc51bc110e04dd953f8aab82558.js",
+    "service-worker.js": "/attachment-viewer-React/service-worker.js",
+    "static/css/main.2c72a854.chunk.css.map": "/attachment-viewer-React/static/css/main.2c72a854.chunk.css.map",
+    "static/js/2.49b4f782.chunk.js.LICENSE.txt": "/attachment-viewer-React/static/js/2.49b4f782.chunk.js.LICENSE.txt",
+    "static/media/Sample PDF.pdf": "/attachment-viewer-React/static/media/Sample PDF.68f8a819.pdf",
+    "static/media/Sample Videos _ Dummy Videos For Demo Use.mp4": "/attachment-viewer-React/static/media/Sample Videos _ Dummy Videos For Demo Use.9640587c.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.981a9069.js",
+    "static/js/2.49b4f782.chunk.js",
+    "static/css/main.2c72a854.chunk.css",
+    "static/js/main.e67e2c89.chunk.js"
+  ]
+}
