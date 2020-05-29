@@ -1,5 +1,3 @@
-import image2 from '../assets/IMG_20190315_124037.jpg';
-import image3 from '../assets/Image 3.png';
 import video from '../assets/Sample Videos _ Dummy Videos For Demo Use.mp4';
 import pdf from '../assets/Sample PDF.pdf';
 
