@@ -1,0 +1,38 @@
+{
+  "name": "attachment-viewer",
+  "version": "1.0.0",
+  "description": "A simple react component to view attachments uploaded by the users of the application",
+  "main": "./build/index.js",
+  "private": false,
+  "scripts": {
+    "link": "npm link ../application/node_modules/react",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed067Abdullah/attachment-viewer-React.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.10",
+    "@material-ui/icons": "^4.9.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "author": "Ahmed Abdullah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ahmed067Abdullah/attachment-viewer-React/issues"
+  },
+  "homepage": "https://github.com/Ahmed067Abdullah/attachment-viewer-React#readme"
+}

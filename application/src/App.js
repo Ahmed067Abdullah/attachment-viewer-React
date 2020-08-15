@@ -18,14 +18,15 @@ const App = () => {
         {attachmentToView
           ? <AttachmentViewer
             attachment={attachmentToView}
+            onDelete={handleDeleteAttachment}
             onClose={() => setAttachmentToView(null)} />
           : null}
         {sampleAttachments.map(attachment => (
           <Button
+            key={attachment.id}
             color="primary"
             variant="contained"
-            onClick={() => setAttachmentToView(attachment)}
-            onDelete={handleDeleteAttachment}>
+            onClick={() => setAttachmentToView(attachment)}>
             {attachment.name.slice(0, attachment.name.lastIndexOf('.'))}
           </Button>))}
       </div>
