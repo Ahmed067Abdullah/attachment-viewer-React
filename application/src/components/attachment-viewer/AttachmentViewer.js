@@ -11,7 +11,7 @@ const iconStyles = {
   'cursor': 'pointer'
 };
 
-const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
+const PWAttachmentViewer = ({ attachment, onClose, onDelete }) => {
   const [maxHeightReached, setMaxHeightReached] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const classes = stylesheet();
@@ -144,11 +144,13 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
                 'marginRight': '10px'
               }} />
           </Tooltip>
-          <Tooltip title="Delete">
-            <DeleteIcon
-              onClick={onDelete}
-              style={iconStyles} />
-          </Tooltip>
+          {onDelete
+            ? <Tooltip title="Delete">
+              <DeleteIcon
+                onClick={onDelete}
+                style={iconStyles} />
+            </Tooltip>
+            : null}
           <div className={classes.separater} />
           <Tooltip title="Close">
             <ClearIcon

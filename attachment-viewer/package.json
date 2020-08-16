@@ -1,12 +1,13 @@
 {
   "name": "attachment-viewer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A simple react component to view attachments uploaded by the users of the application",
   "main": "./build/index.js",
   "private": false,
   "scripts": {
     "link": "npm link ../application/node_modules/react",
-    "build": "webpack"
+    "build": "webpack",
+    "push": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,13 @@
   },
   "author": "Ahmed Abdullah",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "attachments",
+    "files",
+    "preview",
+    "viewer"
+  ],
   "bugs": {
     "url": "https://github.com/Ahmed067Abdullah/attachment-viewer-React/issues"
   },

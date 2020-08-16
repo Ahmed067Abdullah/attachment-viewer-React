@@ -144,11 +144,13 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
                 'marginRight': '10px'
               }} />
           </Tooltip>
-          <Tooltip title="Delete">
-            <DeleteIcon
-              onClick={onDelete}
-              style={iconStyles} />
-          </Tooltip>
+          {onDelete
+            ? <Tooltip title="Delete">
+              <DeleteIcon
+                onClick={onDelete}
+                style={iconStyles} />
+            </Tooltip>
+            : null}
           <div className={classes.separater} />
           <Tooltip title="Close">
             <ClearIcon
