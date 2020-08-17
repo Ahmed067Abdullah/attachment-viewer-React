@@ -63,7 +63,7 @@ export default [
       userImage: 'https://firebasestorage.googleapis.com/v0/b/crime-reporter-app-d0c94.appspot.com/o/crimeImages%2F-MEWXtrJjSlqhH6Oe3_l?alt=media&token=3b01eb64-7564-4f59-8517-e638757aa933'
     },
     name: 'Sample Document.docx',
-    link: 'https://file-examples.com/wp-content/uploads/2017/02/file-sample_100kB.docx',
+    link: 'https://file-examples-com.github.io/uploads/2017/02/file-sample_100kB.docx',
     createdAt: Date.now(),
     mimetype: 'document/docx'
   },
@@ -74,7 +74,7 @@ export default [
       userImage: 'https://firebasestorage.googleapis.com/v0/b/crime-reporter-app-d0c94.appspot.com/o/crimeImages%2F-MEWXtrJjSlqhH6Oe3_l?alt=media&token=3b01eb64-7564-4f59-8517-e638757aa933'
     },
     name: 'Sample Presentation.pptx',
-    link: 'https://file-examples.com/wp-content/uploads/2017/08/file_example_PPT_250kB.ppt',
+    link: 'https://file-examples-com.github.io/uploads/2017/08/file_example_PPT_250kB.ppt',
     createdAt: Date.now(),
     mimetype: 'document/pptx'
   },
@@ -85,7 +85,7 @@ export default [
       userImage: 'https://firebasestorage.googleapis.com/v0/b/crime-reporter-app-d0c94.appspot.com/o/crimeImages%2F-MEWXtrJjSlqhH6Oe3_l?alt=media&token=3b01eb64-7564-4f59-8517-e638757aa933'
     },
     name: 'Sample Sheet.xlsx',
-    link: 'https://file-examples.com/wp-content/uploads/2017/02/file_example_XLSX_10.xlsx',
+    link: 'https://file-examples-com.github.io/uploads/2017/02/file_example_XLSX_10.xlsx',
     createdAt: Date.now(),
     mimetype: 'document/xlsx'
   },
@@ -93,7 +93,7 @@ export default [
     id: 8,
     uploader: {
       username: 'John Doe',
-      userImage: 'https://themes.themewaves.com/nuzi/wp-content/uploads/sites/4/2013/05/Team-Member-3.jpg'
+      userImage: 'https://firebasestorage.googleapis.com/v0/b/crime-reporter-app-d0c94.appspot.com/o/crimeImages%2F-MEWXtrJjSlqhH6Oe3_l?alt=media&token=3b01eb64-7564-4f59-8517-e638757aa933'
     },
     name: 'Sample Text.text',
     link: 'http://25.io/toau/audio/sample.txt',
