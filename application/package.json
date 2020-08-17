@@ -5,7 +5,6 @@
   "homepage": "http://Ahmed067Abdullah.github.io/attachment-viewer-React",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
-    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -16,8 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "push": "npm run build && npm run deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

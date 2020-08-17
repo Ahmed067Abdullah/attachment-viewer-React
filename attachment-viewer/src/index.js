@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import ClearIcon from '@material-ui/icons/Clear';
-import DeleteIcon from '@material-ui/icons/Delete';
-import OpenInNewIcon from '@material-ui/icons/OpenInNew';
+import { ReactComponent as ClearIcon } from './assets/cancel.svg';
+import { ReactComponent as DeleteIcon } from './assets/bin.svg';
+import { ReactComponent as OpenInNewIcon } from './assets/external-link.svg';
 import Tooltip from '@material-ui/core/Tooltip';
 import stylesheet from './AttachmentViewer.styles';
 
-const iconStyles = {
-  'color': '#fff',
-  'cursor': 'pointer'
-};
-
-const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
+const PWAttachmentViewer = ({ attachment, onClose, onDelete }) => {
   const [maxHeightReached, setMaxHeightReached] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
   const classes = stylesheet();
@@ -27,9 +22,9 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
     const extension = name.slice(indexOfExtensionStarting);
     const fileName = name.slice(0, indexOfExtensionStarting);
     return <p className={classes['attachment-name']}>
-      <p>
+      <span>
         {fileName}
-      </p>
+      </span>
       {extension}
     </p>;
   };
@@ -137,25 +132,16 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete = () => { } }) => {
         </div>
         <div className={classes['right-side']}>
           <Tooltip title="Open in new tab">
-            <OpenInNewIcon
-              onClick={downloadFile}
-              style={{
-                ...iconStyles,
-                'marginRight': '10px'
-              }} />
+            <OpenInNewIcon onClick={downloadFile} />
           </Tooltip>
           {onDelete
             ? <Tooltip title="Delete">
-              <DeleteIcon
-                onClick={onDelete}
-                style={iconStyles} />
+              <DeleteIcon onClick={onDelete} />
             </Tooltip>
             : null}
           <div className={classes.separater} />
           <Tooltip title="Close">
-            <ClearIcon
-              onClick={onClose}
-              style={iconStyles} />
+            <ClearIcon onClick={onClose} />
           </Tooltip>
         </div>
       </div>

@@ -67,7 +67,7 @@ const styles = {
     'alignItems': 'center',
     'color': '#fff',
     'display': 'flex',
-    'width': 'calc(100% - 140px)'
+    'width': 'calc(100% - 150px)'
   },
   'no-preview': {
     '& > span': {
@@ -109,7 +109,7 @@ const styles = {
   'separater': {
     'background': '#fff',
     'height': '30px',
-    'margin': '0 10px',
+    'marginRight': '10px',
     'width': '1px'
   },
   'video-container': {
