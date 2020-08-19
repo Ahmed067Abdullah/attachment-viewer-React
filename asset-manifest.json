@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/attachment-viewer-React/static/css/main.2c72a854.chunk.css",
-    "main.js": "/attachment-viewer-React/static/js/main.3d2b7755.chunk.js",
-    "main.js.map": "/attachment-viewer-React/static/js/main.3d2b7755.chunk.js.map",
+    "main.css": "/attachment-viewer-React/static/css/main.4d255f81.chunk.css",
+    "main.js": "/attachment-viewer-React/static/js/main.86a288a2.chunk.js",
+    "main.js.map": "/attachment-viewer-React/static/js/main.86a288a2.chunk.js.map",
     "runtime-main.js": "/attachment-viewer-React/static/js/runtime-main.981a9069.js",
     "runtime-main.js.map": "/attachment-viewer-React/static/js/runtime-main.981a9069.js.map",
-    "static/js/2.225cd377.chunk.js": "/attachment-viewer-React/static/js/2.225cd377.chunk.js",
-    "static/js/2.225cd377.chunk.js.map": "/attachment-viewer-React/static/js/2.225cd377.chunk.js.map",
+    "static/js/2.e58cd6cf.chunk.js": "/attachment-viewer-React/static/js/2.e58cd6cf.chunk.js",
+    "static/js/2.e58cd6cf.chunk.js.map": "/attachment-viewer-React/static/js/2.e58cd6cf.chunk.js.map",
     "index.html": "/attachment-viewer-React/index.html",
-    "precache-manifest.4d7fed12a590bc9462aa0b047046b6fa.js": "/attachment-viewer-React/precache-manifest.4d7fed12a590bc9462aa0b047046b6fa.js",
+    "precache-manifest.3d56ee0c20e7c97563398449aa6cdb9f.js": "/attachment-viewer-React/precache-manifest.3d56ee0c20e7c97563398449aa6cdb9f.js",
     "service-worker.js": "/attachment-viewer-React/service-worker.js",
-    "static/css/main.2c72a854.chunk.css.map": "/attachment-viewer-React/static/css/main.2c72a854.chunk.css.map",
-    "static/js/2.225cd377.chunk.js.LICENSE.txt": "/attachment-viewer-React/static/js/2.225cd377.chunk.js.LICENSE.txt",
+    "static/css/main.4d255f81.chunk.css.map": "/attachment-viewer-React/static/css/main.4d255f81.chunk.css.map",
+    "static/js/2.e58cd6cf.chunk.js.LICENSE.txt": "/attachment-viewer-React/static/js/2.e58cd6cf.chunk.js.LICENSE.txt",
     "static/media/Sample PDF.pdf": "/attachment-viewer-React/static/media/Sample PDF.68f8a819.pdf",
-    "static/media/Sample Videos _ Dummy Videos For Demo Use.mp4": "/attachment-viewer-React/static/media/Sample Videos _ Dummy Videos For Demo Use.9640587c.mp4"
+    "static/media/Sample Videos _ Dummy Videos For Demo Use.mp4": "/attachment-viewer-React/static/media/Sample Videos _ Dummy Videos For Demo Use.9640587c.mp4",
+    "static/media/bin.106bcfe1.svg": "/attachment-viewer-React/static/media/bin.106bcfe1.svg",
+    "static/media/cancel.da6cb82c.svg": "/attachment-viewer-React/static/media/cancel.da6cb82c.svg",
+    "static/media/external-link.dda1450f.svg": "/attachment-viewer-React/static/media/external-link.dda1450f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.981a9069.js",
-    "static/js/2.225cd377.chunk.js",
-    "static/css/main.2c72a854.chunk.css",
-    "static/js/main.3d2b7755.chunk.js"
+    "static/js/2.e58cd6cf.chunk.js",
+    "static/css/main.4d255f81.chunk.css",
+    "static/js/main.86a288a2.chunk.js"
   ]
 }
