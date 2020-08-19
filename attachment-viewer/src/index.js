@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import { ReactComponent as ClearIcon } from './assets/cancel.svg';
 import { ReactComponent as DeleteIcon } from './assets/bin.svg';
 import { ReactComponent as OpenInNewIcon } from './assets/external-link.svg';
-import Tooltip from '@material-ui/core/Tooltip';
-import stylesheet from './AttachmentViewer.styles';
+import Tooltip from './components/tooltip/Tooltip';
+import Loader from './components/loader/Loader';
+import classes from './AttachmentViewer.module.css';
 
 const PWAttachmentViewer = ({ attachment, onClose, onDelete }) => {
   const [maxHeightReached, setMaxHeightReached] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
-  const classes = stylesheet();
 
   const { uploader: { username, userImage }, name, link, createdAt, mimetype } = attachment;
 
@@ -57,9 +56,7 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete }) => {
       />
       {imageLoaded
         ? null
-        : <CircularProgress
-          size="48px"
-        />}
+        : <Loader />}
     </div>;
   } else if (mimetype.startsWith('video/')) {
     attachmentJSX = <div className={classes['video-container']}>
@@ -134,10 +131,14 @@ const PWAttachmentViewer = ({ attachment, onClose, onDelete }) => {
           <Tooltip title="Open in new tab">
             <OpenInNewIcon onClick={downloadFile} />
           </Tooltip>
+          <div className={classes.space} />
           {onDelete
-            ? <Tooltip title="Delete">
-              <DeleteIcon onClick={onDelete} />
-            </Tooltip>
+            ? <>
+              <Tooltip title="Delete">
+                <DeleteIcon onClick={onDelete} />
+              </Tooltip>
+              <div className={classes.space} />
+            </>
             : null}
           <div className={classes.separater} />
           <Tooltip title="Close">

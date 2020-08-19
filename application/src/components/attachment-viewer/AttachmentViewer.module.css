@@ -1,0 +1,160 @@
+.attachment-name {
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+  margin: 0;
+}
+
+.attachment-name>span {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attachment-preview-container {
+  align-items: center;
+  display: flex;
+  height: calc(100% - 70px);
+  justify-content: center;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 5;
+}
+
+.creation-details {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 3px;
+  text-align: left;
+}
+
+.creation-details>span {
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  margin: 15px 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.space {
+  width: 20px;
+}
+
+.image-container {
+  max-height: calc(100% - 20px);
+  max-width: 90%;
+  position: relative;
+}
+
+.image-container>div {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.left-side {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  width: calc(100% - 150px);
+}
+
+.left-side img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.no-preview {
+  color: #fff;
+  font-size: 18;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.no-preview>span {
+  cursor: pointer;
+  text-decoration: underline;
+  user-select: none;
+}
+
+.office-file-container {
+  height: 100%;
+}
+
+.office-file-container>iframe {
+  height: 100%;
+  width: 1200px;
+}
+
+;
+@media(max-width:1250px) {
+  .office-file-container {
+    width: 90%;
+  }
+  .office-file-container>iframe {
+    width: 100%;
+  }
+  ;
+}
+
+.pdf-container {
+  height: 100%;
+  width: 100%;
+}
+
+.pdf-container>embed {
+  height: 100%;
+  width: 100%;
+}
+
+.right-side {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+
+.separater {
+  background: #fff;
+  height: 30px;
+  margin-right: 10px;
+  width: 1px;
+}
+
+.video-container video {
+  background: #000;
+  height: 640px;
+  width: 1024px;
+}
+
+@media(max-width:1100px) {
+  .video-container video {
+    height: 480px;
+    width: 768px;
+  }
+}
+
+@media(max-width:768px) {
+  .video-container video {
+    height: 60vw;
+    width: 80vw;
+  }
+}

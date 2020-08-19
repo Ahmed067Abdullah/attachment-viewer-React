@@ -1,0 +1,40 @@
+.icon {
+  position: relative;
+}
+
+.icon::before, .icon::after {
+  --scale: 0;
+  --arrow-size: 10px;
+  --other-spacing: 5px;
+  --tooltip-color: #333;
+  position: absolute;
+  bottom: .25rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 150ms transform;
+  transform-origin: top center;
+}
+
+.icon::before {
+  --translate-y: calc(100% + var(--arrow-size) + var(--other-spacing));
+  content: attr(data-tooltip);
+  color: white;
+  padding: .5rem;
+  border-radius: .3rem;
+  font-size: 14px;
+  text-align: center;
+  width: max-content;
+  background: var(--tooltip-color);
+}
+
+.icon:hover::before, .icon:hover::after {
+  --scale: 1;
+}
+
+.icon::after {
+  --translate-y: calc(var(--arrow-size) + var(--other-spacing));
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-bottom-color: var(--tooltip-color);
+  transform-origin: bottom center;
+}

@@ -1,6 +1,6 @@
 {
   "name": "attachment-viewer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple react component to view attachments uploaded by the users of the application",
   "main": "./build/index.js",
   "private": false,
